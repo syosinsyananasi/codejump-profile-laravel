@@ -8,41 +8,53 @@
     @vite(['resources/css/app.css'])
 </head>
 
-<body>
-    <header>
-        <h1 class="text-3xl text-white bg-black">Profile</h1>
+<body class="max-w-[960px] mx-auto p-4%">
+    <header class="flex justify-between items-center px-32 py-4">
+        <h1 class="text-3xl text-white bg-black px-4 py-1.5">Profile</h1>
         <nav>
-            <ul>
-                <li>About</li>
+            <ul class="flex gap-4 ">
+                <li >About</li>
                 <li>Bicycle</li>
             </ul>
         </nav>
     </header>
     <main>
+        <img src="img/mainvisual.jpg" alt="Profile Image" class="object-cover w-full h-[500px]  mb-16">
         <section>
-            <h2>Development</h2>
-            <div>
-                <div>profileimage</div>
+            <h2 class="text-center text-3xl font-bold underline mb-18">About</h2>
+            <div class="flex gap-8 px-48 mb-16">
+                <img src="img/about.jpg" alt="Profile Image" class="object-cover w-[100px] h-[100px] rounded-full mt-2">
                 <div>
-                    <h3>Details</h3>
-                    <p>テキスト</p>
+                    <h3 class="text-xl font-bold mb-2">KAKERU MIYAUCHI</h3>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト </p>
                 </div>
             </div>
         </section>
 
         <section>
-            <ul>
+            <h2 class="text-center text-3xl font-bold underline mb-18">Bicycle</h2>
+            <ul class="flex gap-2 justify-center flex-wrap mb-16">
                 <li>
-                    <div></div>
-                    <h3></h3>
-                    <p></p>
+                    <img src="img/bicycle1.jpg" alt="Bicycle Image" class="object-cover w-[300px] h-[200px] mb-4">
+                    <h3>タイトル</h3>
+                    <p>テキストテキストテキスト</p>
                 </li>
-            </ul>
+                <li>
+                    <img src="img/bicycle2.jpg" alt="Bicycle Image" class="object-cover w-[300px] h-[200px] mb-4">
+                    <h3>タイトル</h3>
+                    <p>テキストテキストテキスト</p>
+                </li>
+                                <li>
+                    <img src="img/bicycle3.jpg" alt="Bicycle Image" class="object-cover w-[300px] h-[200px] mb-4">
+                    <h3>タイトル</h3>
+                    <p>テキストテキストテキスト</p>
+                </li>
+            </ul> 
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2020 Profile</p>
+        <p class="flex justify-center mb-8">&copy; 2020 Profile</p>
     </footer>
 </body>
 
