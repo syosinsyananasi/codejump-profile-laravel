@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    @vite(['resources/css/app.css'])
-</head>
+@section('title', 'Profile')
 
-<body class="max-w-[960px] mx-auto p-4%">
-    <header class="flex justify-between items-center px-32 py-4">
-        <h1 class="text-3xl text-white bg-black px-4 py-1.5">Profile</h1>
-        <nav>
-            <ul class="flex gap-4 ">
-                <li>About</li>
-                <li>Bicycle</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+@section('content')
+
         <img src="img/mainvisual.jpg" alt="Profile Image" class="object-cover w-full h-[500px]  mb-16">
         <section>
             <h2 class="text-center text-3xl font-bold underline mb-18">About</h2>
@@ -57,9 +42,4 @@
         </section>
     </main>
 
-    <footer>
-        <p class="flex justify-center mb-8">&copy; 2020 Profile</p>
-    </footer>
-</body>
-
-</html>
+@endsection
